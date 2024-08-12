@@ -1,0 +1,18 @@
+Download ALFWorld follow the instruction in https://github.com/alfworld/alfworld
+
+or using the following commands if you are using Linux
+
+conda create --name HF_LLM \
+    python=3.10 \
+    pytorch-cuda=12.4 \
+    pytorch cudatoolkit xformers -c pytorch -c nvidia -c xformers \
+    -y
+
+conda activate HF_LLM
+
+pip install --no-deps "trl<0.9.0" peft accelerate bitsandbytes
+
+pip install alfworld[full]
+
+export ALFWORLD_DATA=<storage_path>
+alfworld-download

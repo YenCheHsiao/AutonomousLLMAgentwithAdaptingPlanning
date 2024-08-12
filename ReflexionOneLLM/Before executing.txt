@@ -1,0 +1,3 @@
+conda activate HF_LLM
+cd AutonomousLLMAgentwithAdaptingPlanning
+export ALFWORLD_DATA=<storage_path>
